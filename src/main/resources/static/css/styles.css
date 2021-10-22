@@ -1,7 +1,29 @@
 body {
-  padding-bottom: 20px;
+	padding-bottom: 20px;
 }
 
 .navbar {
-  margin-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+#index {
+	border: 1px red;
+	border-style: solid;
+	border-color: coral;
+}
+
+.item {
+	background: #333;
+	text-align: center;
+	height: 300px;
+}
+
+h5 {
+	margin: 0;
+	color: #000000;
+	padding-top: 80px;
+	font-size: 30px;
+}
+.carText {
+	color: black;
 }
