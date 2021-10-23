@@ -59,10 +59,12 @@
 	<!-- NAVBAR -->
 
 
-	<div class="container box" id="index">
+	<div class="container-fluid box" id="index">
+		<!-- Remove the -fluid or build this a better way -->
 		<div class="row">
 
 			<!-- CAROUSEL -->
+			<!-- This should either be the menu or how I have it setUp -->
 			<div class="col-12 col-md-8">
 				<div class="bd-example">
 					<div class="card">
@@ -76,6 +78,7 @@
 									<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
 								</ol>
 								<div class="carousel-inner">
+									<!-- This will be the main promo -->
 									<div class="carousel-item active">
 										<img src="/img/lemonade1.jpg" class="d-block w-100" alt="...">
 										<div class="carousel-caption d-none d-md-block">
@@ -85,6 +88,7 @@
 										</div>
 									</div>
 									<div class="carousel-item">
+										<!-- Current location -->
 										<img src="/img/lemonade1.jpg" class="d-block w-100" alt="...">
 										<div class="carousel-caption d-none d-md-block">
 											<h5>Second slide label</h5>
@@ -93,6 +97,7 @@
 										</div>
 									</div>
 									<div class="carousel-item">
+										<!-- Current menu -->
 										<img src="/img/lemonade1.jpg" class="d-block w-100" alt="...">
 										<div class="carousel-caption d-none d-md-block">
 											<h5>Third slide label</h5>
@@ -118,12 +123,48 @@
 			<!-- END CAROUSEL  -->
 
 			<div class="col-6 col-md-4">
-			<img src="/img/logo.jpg" class="img-responsive"/>
+				<!-- In the future I need to replace this or remove the border from around my logo  -->
+				<img src="/img/logo.jpg" class="Responsive image" id="myLogo" />
 			</div>
 
 		</div>
-	</div>
+		<hr class="indexHr" />
 
+		<!-- This is the current Menu Items -->
+		<div class="row">
+<!-- fix sizes of all imgs they are all super crazy lol -->
+			<div class="col-4 col-sm-4">
+				<div class="panel panel-default">
+					<div class="panel-body">
+					<img src="/img/mintLemonade.jpg" class="img-thumbnail" />
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="col-6 col-sm-4">
+				<div class="panel panel-default">
+					<div class="panel-body">
+					<img src="/img/peachLemonade.jpg" class="img-thumbnail" />
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="col-6 col-sm-4">
+				<div class="panel panel-default">
+					<div class="panel-body">
+					<img src="/img/herbLemonade.jpg" class="img-thumbnail" />
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+
+
+	</div>
 
 
 
