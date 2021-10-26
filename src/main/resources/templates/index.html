@@ -1,63 +1,11 @@
 
 <!doctype html>
 <html lang="en" />
-<head>
-<meta charset="utf-8" />
-<meta name="viewport"
-	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-<meta name="description" content="Lets drink some lemonade" />
-<meta name="author" content="MIdNightCookies" />
-<link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico" />
-
-<title>Lemonade Stand</title>
-
-<link rel="canonical"
-	href="https://getbootstrap.com/docs/4.0/examples/navbars/" />
-
-<!-- Bootstrap core CSS -->
-<link href="/css/bootstrap.min.css" rel="stylesheet" />
-
-<!-- Custom styles for this template -->
-<link href="/css/styles.css" rel="stylesheet">
-</head>
-
+<head th:replace="common/header :: common-header" />
 <body>
 
 	<!--NAVBAR  -->
-	<nav class="navbar navbar-expand-lg bg-dark navbar-dark rounded">
-		<a class="navbar-brand" href="#">Main Squeeze Digital Lemonade
-			Stand</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse"
-			data-target="#navbarsExample09" aria-controls="navbarsExample09"
-			aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-
-		<div class="collapse navbar-collapse" id="navbarsExample09">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active"><a class="nav-link" href="#">Home
-						<span class="sr-only">(current)</span>
-				</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
-				<li class="nav-item"><a class="nav-link disabled" href="#">Login</a>
-				</li>
-				<li class="nav-item dropdown"><a
-					class="nav-link dropdown-toggle" href="http://example.com"
-					id="dropdown09" data-toggle="dropdown" aria-haspopup="true"
-					aria-expanded="false">More</a>
-					<div class="dropdown-menu" aria-labelledby="dropdown09">
-						<a class="dropdown-item" href="#">Team</a> <a
-							class="dropdown-item" href="#">Tips</a>
-					</div></li>
-			</ul>
-			<form class="form-inline my-2 my-md-0">
-				<input class="form-control" type="text" placeholder="Search"
-					aria-label="Search">
-			</form>
-		</div>
-	</nav>
-	<!-- NAVBAR -->
-
+	<div th:replace="common/header :: navbar" />
 
 	<div class="container box" id="index">
 		<div class="row">
@@ -118,24 +66,60 @@
 			<!-- END CAROUSEL  -->
 
 			<div class="col-6 col-md-4">
-			<img src="/img/logo.jpg" class="img-responsive"/>
+				<img src="/img/logo.jpg" class="img-thumbnail" />
 			</div>
 
 		</div>
-	</div>
+
+
+		<div class="row">
+		
+		<h5>Drinks</h5>
+		
+		</div>
+
+		<!-- This is the current Menu Items -->
+		<div class="row">
+			<!-- fix sizes of all imgs they are all super crazy lol -->
+			<div class="col-4 col-sm-4">
+				<div class="panel panel-default">
+					<div class="panel-body">
+
+						<a class="nav-link" href="#"> <img src="/img/mintLemonade.jpg"
+							class="img-thumbnail" />
+						</a>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-6 col-sm-4">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<a class="nav-link" href="#"> <img
+							src="/img/peachLemonade.jpg" class="img-thumbnail" /> <!-- This will be the current location with googleMaps Api -->
+
+						</a>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-6 col-sm-4">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<a class="nav-link" href="#"> <img src="/img/herbLemonade.jpg"
+							class="img-thumbnail" />
+						</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
 
 
 
 
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-		crossorigin="anonymous"></script>
-	<script>
-		window.jQuery
-				|| document
-						.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')
-	</script>
-	<script src="/js/bootstrap.min.js"></script>
-
+		<div th:replace="common/header :: body-bottom-scripts" />
 </body>
 </html>
