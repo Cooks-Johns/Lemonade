@@ -16,9 +16,9 @@ public class HomeController {
 		return "hidden";
 	}
 	
-	@RequestMapping("/homePage")
-	public String homePage(){
-		return "homePage";
+	@RequestMapping("/myAccount")
+	public String myAccount(){
+		return "myAccount";
 	}
 	
 	@RequestMapping("/button3D")
