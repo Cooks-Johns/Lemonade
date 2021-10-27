@@ -1,67 +1,49 @@
- 
-<!doctype html>
-<html lang="en" />
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Lets drink some lemonade" />
-    <meta name="author" content="MIdNightCookies" />
-    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico" />
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" />
+<head th:fragment="common-header">
+<meta charset="utf-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="description" content="Lets drink some lemonade" />
+<meta name="author" content="MIdNightCookies" />
 
-    <title>Menu</title>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/navbars/" />
-
-    <!-- Bootstrap core CSS -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet" />
-
-    <!-- Custom styles for this template -->
-    <link href="/css/nav.css" rel="stylesheet">
-  </head>
-
-  <body>
-
-    <nav class="nav">
-        <div class="container">
-            <div class="logo">
-                <a href="#"> Grab some Lemonade!</a>
-            </div>
-            <div id="mainListDiv" class="main_list">
-                <ul class="navlinks">
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">Locations</a></li>
-                    <li><a href="#">Community Spot Light</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <span class="navTrigger">
-                <i></i>
-                <i></i>
-                <i></i>
-            </span>
-        </div>
-    </nav>
-
-    <section class="home">
-    </section>
-    <div style="height: 1000px">
-        <!-- just to make scrolling effect possible -->
-			<h2 class="myH2">Why haven't you gotten some lemonade yet</h2>
-			<p class="myP">This is a responsive fixed navbar animated on scroll</p>
-			
-		
-				
-    </div>
-
-<!-- Jquery needed -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="js/navBar.js"></script>
+<title>Lemonade Stand Header</title>
 
 
-    
-    
-    
-    
-  </body>
+
+<!-- Custom styles for this template -->
+<link href="/css/nav.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+	<div th:fragment="testBody">
+
+
+
+		<link
+			href="https://fonts.googleapis.com/css?family=Raleway:200,100,400"
+			rel="stylesheet" type="text/css" />
+		<h1>
+			We have <span class="txt-rotate" data-period="2000"
+				data-rotate='[ "Lemonade.", "laughs!", "more jokes.", "fun!" ]'></span>
+		</h1>
+		<h2>Welcome to my page.</h2>
+
+
+
+
+	<!-- TestBody -->
+	</div>
+
+
+	<!-- FOOTER -->
+	<div th:fragment="test-scripts">
+
+		<script src="/js/navBar.js"></script>
+	</div>
+
+</body>
 </html>
-    

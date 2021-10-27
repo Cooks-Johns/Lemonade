@@ -11,14 +11,19 @@ public class HomeController {
 		return "index";
 	}
 	
-	@RequestMapping("/menu")
-	public String menu(){
-		return "menu";
+	@RequestMapping("/hidden")
+	public String hidden(){
+		return "hidden";
 	}
 	
 	@RequestMapping("/homePage")
 	public String homePage(){
 		return "homePage";
+	}
+	
+	@RequestMapping("/button3D")
+	public String button3D(){
+		return "button3D";
 	}
 
 }
