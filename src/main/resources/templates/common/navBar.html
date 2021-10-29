@@ -1,7 +1,6 @@
-
-<!doctype html>
-<html xmlns:th="http://www.thymeleaf.org" />
-<headth:fragment="head">
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" />
+<head th:fragment="common-header-account">
 <meta charset="utf-8" />
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -9,13 +8,13 @@
 <meta name="author" content="MIdNightCookies" />
 <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico" />
 
-<title>Lemonade Stand</title>
+<title>Lemonade Stand Header</title>
 
 <link rel="canonical"
 	href="https://getbootstrap.com/docs/4.0/examples/navbars/" />
 
 <!-- Bootstrap core CSS -->
-<!-- <link href="/css/bootstrap.min.css" rel="stylesheet" /> -->
+<link href="/css/bootstrap.min.css" rel="stylesheet" />
 
 <!-- Custom styles for this template -->
 <link href="/css/styles.css" rel="stylesheet">
@@ -23,11 +22,10 @@
 
 <body>
 
+		<!--NAVBAR myAccount -->	
+	<div th:fragment="navbar-myAccount">
 	<div class="page-top" id="indexHeader"></div>
-
-
-	<!--NAVBAR  -->
-	<nav class="navbar navbar-expand-lg bg-dark navbar-dark rounded" th:fragment="navbar">
+		<nav class="navbar navbar-expand-lg bg-dark navbar-dark rounded">
 		<a class="navbar-brand" href="#">Main Squeeze Digital Lemonade
 			Stand</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -38,7 +36,7 @@
 
 		<div class="collapse navbar-collapse" id="navbarsExample09">
 			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active"><a class="nav-link" href="#">Home
+				<li class="nav-item active"><a class="nav-link" href="/">Home
 						<span class="sr-only">(current)</span>
 				</a></li>
 				<li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
@@ -59,10 +57,20 @@
 			</form>
 		</div>
 	</nav>
+	</div>
 	<!-- NAVBAR -->
 
 
-<div th:replace="fragmentfilepath :: footer"></div>
+<div th:fragment="myAcountFoot"></div>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script>
+		window.jQuery
+				|| document
+						.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')
+	</script>
 	<script src="/js/bootstrap.min.js"></script>
 
 </body>
